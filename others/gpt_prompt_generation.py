@@ -5,7 +5,7 @@ import json
 
 prompt_book = load_prompt_book("3d_spatial.txt")
 
-api_key = "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"
+api_key = "YOUR_API_KEY"
 client = OpenAI(api_key=api_key)
 output_folder = "output/3d_spatial/prompt/gpt_4o"
 if not os.path.exists(output_folder):
