@@ -1,0 +1,15 @@
+torch
+spacy
+ollama
+lavis
+Pillow
+requests
+transformers
+matplotlib
+cv2
+numpy
+tqdm
+openai
+ruamel.yaml
+ruamel_yaml
+accelerate 

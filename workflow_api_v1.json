@@ -1,0 +1,893 @@
+{
+  "1": {
+    "inputs": {
+      "category": "gpt-4o",
+      "preset": "#PRESET",
+      "seed": 48337237743941,
+      "text": "a refrigerator hidden by a rabbit"
+    },
+    "class_type": "PromptSampler //test",
+    "_meta": {
+      "title": "PromptSampler (test)"
+    }
+  },
+  "4": {
+    "inputs": {
+      "text": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "5": {
+    "inputs": {
+      "category": "gpt-4o",
+      "seed": 264660855210753,
+      "text": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "LLMBlock //test",
+    "_meta": {
+      "title": "LLMBlock (test)"
+    }
+  },
+  "6": {
+    "inputs": {
+      "action": "append",
+      "tidy_tags": "no",
+      "text_a": "please parse the following json file. output the value of keyword \"prompt\" without other explation.",
+      "text_b": [
+        "1",
+        0
+      ],
+      "text_c": ""
+    },
+    "class_type": "StringFunction|pysssss",
+    "_meta": {
+      "title": "String Function 🐍"
+    }
+  },
+  "9": {
+    "inputs": {
+      "text": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "10": {
+    "inputs": {
+      "seed": 1066942490205459,
+      "steps": 20,
+      "cfg": 4,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "18",
+        0
+      ],
+      "positive": [
+        "11",
+        0
+      ],
+      "negative": [
+        "12",
+        0
+      ],
+      "latent_image": [
+        "16",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "11": {
+    "inputs": {
+      "text": [
+        "5",
+        0
+      ],
+      "clip": [
+        "18",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Positive Prompt)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "text": "text, watermark",
+      "clip": [
+        "18",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Negative Prompt)"
+    }
+  },
+  "13": {
+    "inputs": {
+      "samples": [
+        "15",
+        0
+      ],
+      "vae": [
+        "19",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "14": {
+    "inputs": {
+      "filename_prefix": "mode2",
+      "images": [
+        "13",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "15": {
+    "inputs": {
+      "seed": 317905180423666,
+      "steps": 10,
+      "cfg": 1.1,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "19",
+        0
+      ],
+      "positive": [
+        "17",
+        0
+      ],
+      "negative": [
+        "12",
+        0
+      ],
+      "latent_image": [
+        "16",
+        1
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "16": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "compression": 42,
+      "batch_size": 1
+    },
+    "class_type": "StableCascade_EmptyLatentImage",
+    "_meta": {
+      "title": "StableCascade_EmptyLatentImage"
+    }
+  },
+  "17": {
+    "inputs": {
+      "conditioning": [
+        "11",
+        0
+      ],
+      "stage_c": [
+        "10",
+        0
+      ]
+    },
+    "class_type": "StableCascade_StageB_Conditioning",
+    "_meta": {
+      "title": "StableCascade_StageB_Conditioning"
+    }
+  },
+  "18": {
+    "inputs": {
+      "ckpt_name": "stable_cascade_stage_c.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint"
+    }
+  },
+  "19": {
+    "inputs": {
+      "ckpt_name": "stable_cascade_stage_b.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint"
+    }
+  },
+  "27": {
+    "inputs": {
+      "seed": 64701897848370,
+      "steps": 20,
+      "cfg": 4,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "18",
+        0
+      ],
+      "positive": [
+        "28",
+        0
+      ],
+      "negative": [
+        "29",
+        0
+      ],
+      "latent_image": [
+        "33",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "28": {
+    "inputs": {
+      "text": "a refrigerator hidden by a rabbit",
+      "clip": [
+        "18",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Positive Prompt)"
+    }
+  },
+  "29": {
+    "inputs": {
+      "text": "text, watermark",
+      "clip": [
+        "18",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Negative Prompt)"
+    }
+  },
+  "30": {
+    "inputs": {
+      "samples": [
+        "32",
+        0
+      ],
+      "vae": [
+        "19",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "31": {
+    "inputs": {
+      "filename_prefix": "mode1",
+      "images": [
+        "30",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "32": {
+    "inputs": {
+      "seed": 528189608112481,
+      "steps": 10,
+      "cfg": 1.1,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "19",
+        0
+      ],
+      "positive": [
+        "34",
+        0
+      ],
+      "negative": [
+        "29",
+        0
+      ],
+      "latent_image": [
+        "33",
+        1
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "33": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "compression": 42,
+      "batch_size": 1
+    },
+    "class_type": "StableCascade_EmptyLatentImage",
+    "_meta": {
+      "title": "StableCascade_EmptyLatentImage"
+    }
+  },
+  "34": {
+    "inputs": {
+      "conditioning": [
+        "28",
+        0
+      ],
+      "stage_c": [
+        "27",
+        0
+      ]
+    },
+    "class_type": "StableCascade_StageB_Conditioning",
+    "_meta": {
+      "title": "StableCascade_StageB_Conditioning"
+    }
+  },
+  "89": {
+    "inputs": {
+      "seed": 985716814654038,
+      "steps": 20,
+      "cfg": 4,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "18",
+        0
+      ],
+      "positive": [
+        "90",
+        0
+      ],
+      "negative": [
+        "91",
+        0
+      ],
+      "latent_image": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "90": {
+    "inputs": {
+      "text": [
+        "128",
+        0
+      ],
+      "clip": [
+        "18",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Positive Prompt)"
+    }
+  },
+  "91": {
+    "inputs": {
+      "text": "text, watermark",
+      "clip": [
+        "18",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Negative Prompt)"
+    }
+  },
+  "92": {
+    "inputs": {
+      "samples": [
+        "94",
+        0
+      ],
+      "vae": [
+        "19",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "93": {
+    "inputs": {
+      "filename_prefix": "mode3",
+      "images": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "94": {
+    "inputs": {
+      "seed": 815831229206593,
+      "steps": 10,
+      "cfg": 1.1,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "19",
+        0
+      ],
+      "positive": [
+        "96",
+        0
+      ],
+      "negative": [
+        "91",
+        0
+      ],
+      "latent_image": [
+        "95",
+        1
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "95": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "compression": 42,
+      "batch_size": 1
+    },
+    "class_type": "StableCascade_EmptyLatentImage",
+    "_meta": {
+      "title": "StableCascade_EmptyLatentImage"
+    }
+  },
+  "96": {
+    "inputs": {
+      "conditioning": [
+        "90",
+        0
+      ],
+      "stage_c": [
+        "89",
+        0
+      ]
+    },
+    "class_type": "StableCascade_StageB_Conditioning",
+    "_meta": {
+      "title": "StableCascade_StageB_Conditioning"
+    }
+  },
+  "102": {
+    "inputs": {},
+    "class_type": "CreateEmptyList //test",
+    "_meta": {
+      "title": "CreateEmptyList"
+    }
+  },
+  "103": {
+    "inputs": {
+      "role": "system",
+      "text": [
+        "105",
+        0
+      ],
+      "messages": [
+        "102",
+        0
+      ]
+    },
+    "class_type": "ChatLLM_add_text //test",
+    "_meta": {
+      "title": "ChatLLM_add_text"
+    }
+  },
+  "105": {
+    "inputs": {
+      "action": "append",
+      "tidy_tags": "no",
+      "text_a": "Image description :\"",
+      "text_b": "a refrigerator hidden by a rabbit",
+      "text_c": "\""
+    },
+    "class_type": "StringFunction|pysssss",
+    "_meta": {
+      "title": "String Function 🐍"
+    }
+  },
+  "106": {
+    "inputs": {
+      "prompt": "I am analyzing the relationship between text and images. According to the user input, please help me design 5 English questions and answers pair to confirm whether the text and the image are consistent. The output format should be in JSON format as follows: \"Q1\": \"...\", \"Q2\": \"...\", \"Q3\": \"...\", \"Q4\": \"...\", \"Q5\": \"...\",\"A1\": \"...\", \"A2\": \"...\", \"A3\": \"...\", \"A4\": \"...\", \"A5\": \"...\", \"explanation\": \"...\"",
+      "max_output_tokens": 2048,
+      "top_p": 1,
+      "top_k": 32,
+      "messages": [
+        "103",
+        0
+      ]
+    },
+    "class_type": "ChatLLM //test",
+    "_meta": {
+      "title": "ChatLLM"
+    }
+  },
+  "108": {
+    "inputs": {
+      "text": [
+        "106",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "109": {
+    "inputs": {
+      "pixels": [
+        "13",
+        0
+      ],
+      "messages": [
+        "106",
+        1
+      ]
+    },
+    "class_type": "ChatLLM_add_image //test",
+    "_meta": {
+      "title": "ChatLLM_add_image"
+    }
+  },
+  "113": {
+    "inputs": {
+      "prompt": "according to the questions and answers pairs, Answering the questions ",
+      "max_output_tokens": 2048,
+      "top_p": 1,
+      "top_k": 32,
+      "messages": [
+        "109",
+        0
+      ]
+    },
+    "class_type": "ChatLLM //test",
+    "_meta": {
+      "title": "ChatLLM"
+    }
+  },
+  "115": {
+    "inputs": {
+      "text": [
+        "113",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "116": {
+    "inputs": {
+      "action": "append",
+      "tidy_tags": "no",
+      "text_a": "the image is create by stable diffusion. And the prompt is :\"",
+      "text_b": [
+        "5",
+        0
+      ],
+      "text_c": "\"\nBased on the above user input, VQA pairs, VQA result and the input prompt, try to find to problem in input prompt which generating the input image. the  newer prompt should be improved to make the generated images more consistent with the description. the output should be JSON format.\n \"newer prompt\": \"...\", explanation\": \"...\"\n"
+    },
+    "class_type": "StringFunction|pysssss",
+    "_meta": {
+      "title": "String Function 🐍"
+    }
+  },
+  "117": {
+    "inputs": {
+      "prompt": [
+        "116",
+        0
+      ],
+      "max_output_tokens": 2048,
+      "top_p": 1,
+      "top_k": 32,
+      "messages": [
+        "113",
+        1
+      ]
+    },
+    "class_type": "ChatLLM //test",
+    "_meta": {
+      "title": "ChatLLM"
+    }
+  },
+  "118": {
+    "inputs": {
+      "text": [
+        "117",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "119": {
+    "inputs": {
+      "prompt": "find out the value of the key \"newer_prompt\" in the  JSON file.\nwithout explanation.",
+      "max_output_tokens": 2048,
+      "top_p": 1,
+      "top_k": 32,
+      "messages": [
+        "124",
+        0
+      ]
+    },
+    "class_type": "ChatLLM //test",
+    "_meta": {
+      "title": "ChatLLM"
+    }
+  },
+  "121": {
+    "inputs": {},
+    "class_type": "CreateEmptyList //test",
+    "_meta": {
+      "title": "CreateEmptyList"
+    }
+  },
+  "124": {
+    "inputs": {
+      "role": "user",
+      "text": [
+        "117",
+        0
+      ],
+      "messages": [
+        "121",
+        0
+      ]
+    },
+    "class_type": "ChatLLM_add_text //test",
+    "_meta": {
+      "title": "ChatLLM_add_text"
+    }
+  },
+  "125": {
+    "inputs": {
+      "text": [
+        "119",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "126": {
+    "inputs": {
+      "category": "gpt-4o",
+      "preset": "#PRESET",
+      "seed": 853680531844017,
+      "text": [
+        "119",
+        0
+      ]
+    },
+    "class_type": "PromptSampler //test",
+    "_meta": {
+      "title": "PromptSampler (test)"
+    }
+  },
+  "127": {
+    "inputs": {
+      "text": [
+        "126",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "128": {
+    "inputs": {
+      "category": "gpt-4o",
+      "seed": 1083836010616168,
+      "text": [
+        "129",
+        0
+      ]
+    },
+    "class_type": "LLMBlock //test",
+    "_meta": {
+      "title": "LLMBlock (test)"
+    }
+  },
+  "129": {
+    "inputs": {
+      "action": "append",
+      "tidy_tags": "no",
+      "text_a": "please parse the following json file. output the value of keyword \"prompt\" without other explation.",
+      "text_b": [
+        "126",
+        0
+      ],
+      "text_c": ""
+    },
+    "class_type": "StringFunction|pysssss",
+    "_meta": {
+      "title": "String Function 🐍"
+    }
+  },
+  "131": {
+    "inputs": {
+      "text": [
+        "128",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "134": {
+    "inputs": {
+      "action": "append",
+      "tidy_tags": "no",
+      "text_a": "mode1:",
+      "text_b": "a refrigerator hidden by a rabbit",
+      "text_c": ".\n"
+    },
+    "class_type": "StringFunction|pysssss",
+    "_meta": {
+      "title": "String Function 🐍"
+    }
+  },
+  "135": {
+    "inputs": {
+      "action": "append",
+      "tidy_tags": "no",
+      "text_a": "mode2:",
+      "text_b": [
+        "5",
+        0
+      ],
+      "text_c": ".\n"
+    },
+    "class_type": "StringFunction|pysssss",
+    "_meta": {
+      "title": "String Function 🐍"
+    }
+  },
+  "136": {
+    "inputs": {
+      "action": "append",
+      "tidy_tags": "no",
+      "text_a": "mode3:",
+      "text_b": [
+        "128",
+        0
+      ],
+      "text_c": ".\n"
+    },
+    "class_type": "StringFunction|pysssss",
+    "_meta": {
+      "title": "String Function 🐍"
+    }
+  },
+  "137": {
+    "inputs": {
+      "action": "append",
+      "tidy_tags": "no",
+      "text_a": [
+        "134",
+        0
+      ],
+      "text_b": [
+        "135",
+        0
+      ],
+      "text_c": [
+        "136",
+        0
+      ]
+    },
+    "class_type": "StringFunction|pysssss",
+    "_meta": {
+      "title": "String Function 🐍"
+    }
+  },
+  "138": {
+    "inputs": {
+      "root_dir": "input",
+      "file": "a refrigerator hidden by a rabbit",
+      "append": "append",
+      "insert": true,
+      "text": [
+        "137",
+        0
+      ]
+    },
+    "class_type": "SaveText|pysssss",
+    "_meta": {
+      "title": "Save Text 🐍"
+    }
+  },
+  "140": {
+    "inputs": {
+      "text": [
+        "138",
+        0
+      ]
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  }
+}
