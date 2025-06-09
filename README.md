@@ -64,7 +64,7 @@ This project provides a variety of tools and scripts for image generation, proce
     cd ..
     ```
 9.  **Install ollama:**
-install [ollama][(https://www.anaconda.com/products/distribution)](https://ollama.com/)
+install [ollama](https://ollama.com/)
 ---
 
 ## Execution Example
