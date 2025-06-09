@@ -34,13 +34,13 @@ This project provides a variety of tools and scripts for image generation, proce
 4.  **Install PyTorch:**
 
     ```bash
-    pip install torch torchvision torchaudio --index-url [https://download.pytorch.org/whl/cu126](https://download.pytorch.org/whl/cu126)
+    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
     ```
-    * Adjust the `cu126` based on your CUDA version, or use `cpu` if you don't have a NVIDIA GPU.
+    * Adjust torch version based on your CUDA version, or use `cpu` if you don't have a NVIDIA GPU.
 5.  **Clone the ComfyUI repository:**
-
+   
     ```bash
-    git clone [https://github.com/comfyanonymous/ComfyUI.git](https://github.com/comfyanonymous/ComfyUI.git)
+    git clone https://github.com/comfyanonymous/ComfyUI.git
     cd ComfyUI
     ```
 6.  **Install ComfyUI dependencies:**
@@ -52,8 +52,8 @@ This project provides a variety of tools and scripts for image generation, proce
 
     ```bash
     cd custom_nodes
-    git clone [https://github.com/stavsap/comfyui-ollama.git](https://github.com/stavsap/comfyui-ollama.git)
-    git clone [https://github.com/fairy-root/ComfyUI-Show-Text.git](https://github.com/fairy-root/ComfyUI-Show-Text.git)
+    git clone https://github.com/stavsap/comfyui-ollama.git
+    git clone https://github.com/fairy-root/ComfyUI-Show-Text.git
     ```
 8.  **Install custom node dependencies:**
 
@@ -63,6 +63,7 @@ This project provides a variety of tools and scripts for image generation, proce
     cd ..
     cd ..
     ```
+9.  **Install ollama:**
 
 ---
 
